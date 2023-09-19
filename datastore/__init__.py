@@ -2,7 +2,9 @@ import constants
 from utils import get_formatted_time
 from datastore.wallet_store import WalletStore
 
-
+# Following are in memory datastore.
+# wallets will store dictionary/ store mapping from id to class object
+# token mappings will map token to wallet id
 wallets = {}  # id: Wallet()
 token_mapping = {}  # token : wallet_id
 
